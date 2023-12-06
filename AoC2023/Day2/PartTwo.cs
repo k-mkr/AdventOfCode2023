@@ -2,7 +2,7 @@
 
 namespace Day2
 {
-    internal class PartTwo : PartBase
+    internal class PartTwo : PartBase<int>
     {
         public override int Run(string[] input)
         {

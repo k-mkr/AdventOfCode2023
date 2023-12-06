@@ -1,7 +1,7 @@
 ﻿using System.Drawing;
 using Utils;
 
-internal class PartOne : PartBase
+internal class PartOne : PartBase<int>
 {
     public override int Run(string[] input)
     {

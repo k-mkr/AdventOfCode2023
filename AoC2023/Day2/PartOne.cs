@@ -3,7 +3,7 @@ using Utils;
 
 namespace Day2
 {
-    internal class PartOne : PartBase
+    internal class PartOne : PartBase<int>
     {
         Dictionary<string, int> maxCubesDefinedInGame = new Dictionary<string, int>
         {

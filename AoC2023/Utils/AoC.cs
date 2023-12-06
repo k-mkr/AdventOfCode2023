@@ -2,11 +2,11 @@
 {
     public static class AoC
     {
-        public static int Execute<TPartOne, TPartTwo>(Part executingPart, string inputFile)
-            where TPartOne : PartBase, new()
-            where TPartTwo : PartBase, new()
+        public static TResult Execute<TPartOne, TPartTwo, TResult>(Part executingPart, string inputFile)
+            where TPartOne : PartBase<TResult>, new()
+            where TPartTwo : PartBase<TResult>, new()
         {
-            PartBase part = executingPart == Part.One
+            PartBase<TResult> part = executingPart == Part.One
                 ? new TPartOne()
                 : new TPartTwo();
 

@@ -2,7 +2,7 @@
 
 namespace Day1
 {
-    internal class PartTwo : PartBase
+    internal class PartTwo : PartBase<int>
     {
         private static string[] lettersSpelledDigits =
         [

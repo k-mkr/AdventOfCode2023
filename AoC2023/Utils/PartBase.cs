@@ -1,7 +1,7 @@
 ﻿namespace Utils
 {
-    public abstract class PartBase
+    public abstract class PartBase<T>
     {
-        public abstract int Run(string[] input);
+        public abstract T Run(string[] input);
     }
 }
