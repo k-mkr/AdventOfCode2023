@@ -49,7 +49,7 @@ internal class PartOne : PartBase<long>
         return result;
     }
 
-    private HandType GetType(string hand)
+    public static HandType GetType(string hand)
     {
         var type = hand.GroupBy(x => x).ToArray();
         int[] counts = type.Select(x => x.Count()).ToArray();
